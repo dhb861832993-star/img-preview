@@ -1,7 +1,7 @@
 {
   "name": "img-preview",
-  "description": "Inline image preview for DeepSeek Harness: display local image files (PNG/JPG/WebP/GIF) directly inside the chat — fence language `img` + `img_serve` tool. Click to open full size, captions, multi-image grids.",
-  "version": "0.1.0",
+  "description": "Inline image preview for DeepSeek Harness: display local image files (PNG/JPG/WebP/GIF/AVIF/BMP/SVG/ICO/TGA) directly inside the chat — fence language `img` + `img_serve` tool. Click to open full size, captions, multi-image grids.",
+  "version": "0.1.1",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -26,7 +26,8 @@
     "preview",
     "inline",
     "attachment",
-    "screenshot"
+    "screenshot",
+    "tga"
   ],
   "repository": {
     "type": "git",
@@ -37,7 +38,7 @@
     "url": "https://github.com/dhb861832993-star/img-preview/issues"
   },
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "test:tga": "node scripts/test-tga.mjs"
   },
   "dsh": {
     "bundle": {
