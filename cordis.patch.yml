@@ -1,0 +1,6 @@
+# ImgPreview dsh bundle layer: mount the host plugin row. The client half is
+# auto-discovered by dsh-client-modules via the package's `dsh.client` +
+# `exports["./client"]` declaration (served at /plugins/img-preview/client.js).
+- insert:
+    - id: img-preview
+      name: img-preview

@@ -1,0 +1,51 @@
+{
+  "name": "img-preview",
+  "description": "Inline image preview for DeepSeek Harness: display local image files (PNG/JPG/WebP/GIF) directly inside the chat — fence language `img` + `img_serve` tool. Click to open full size, captions, multi-image grids.",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "image",
+    "preview",
+    "inline",
+    "attachment",
+    "screenshot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhb861832993-star/img-preview.git"
+  },
+  "homepage": "https://github.com/dhb861832993-star/img-preview#readme",
+  "bugs": {
+    "url": "https://github.com/dhb861832993-star/img-preview/issues"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
