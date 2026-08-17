@@ -1,7 +1,7 @@
 {
   "name": "img-preview",
-  "description": "Inline image preview for DeepSeek Harness: display local image files (PNG/JPG/WebP/GIF/AVIF/BMP/SVG/ICO/TGA) directly inside the chat — fence language `img` + `img_serve` tool. Click to open full size, captions, multi-image grids.",
-  "version": "0.1.1",
+  "description": "Inline image preview for DeepSeek Harness: display local image files (PNG/JPG/WebP/GIF/AVIF/BMP/SVG/ICO/TGA) directly inside the chat — fence language `img` + `img_serve` tool. Double-click opens a standalone viewer with free zoom/pan.",
+  "version": "0.1.2",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
