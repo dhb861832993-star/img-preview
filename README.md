@@ -5,8 +5,8 @@
 > 🔌 生态：仓库已挂 `#dsh` · `#dsh-plugin` · `#deepseek-harness` · `#image-preview` topic，欢迎社区收录。
 
 - 宿主端：注册 `img_serve` 工具（校验图片路径、签发可访问 URL）与 `/plugins/img-preview/files` 回环文件路由（仅服务工作区内的 png/jpg/jpeg/webp/gif/avif/bmp/svg/ico/tga；**TGA 自动转码为 PNG**，浏览器原生不显示 TGA）。
-- 客户端：检测 ` ```img ` 栅栏，渲染为内联图片（支持标题、**双击独立查看 + 自由缩放**、多图网格）。
-- 系统提示：自动注入使用说明，图片生成/出现后主动触发展示。
+- 客户端：检测 ` ```img ` 栅栏，渲染为内联图片（支持标题、**双击独立查看 + 自由缩放**、多图网格）；解析容错反斜杠路径（`H:\dir\img.png` 自动归一化为正斜杠，避免非法 JSON 转义）。
+- 系统提示：自动注入使用说明，图片生成/出现后主动触发展示；`img_serve` 返回的提示直接给出正斜杠路径，保证 fence 是合法 JSON。
 
 ## 图片交互
 
